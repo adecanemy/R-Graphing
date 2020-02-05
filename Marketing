@@ -10,7 +10,7 @@
 >graph3=graph2+annotate("text",x=4,y=6,label="现金牛类",size=14)
 >graph4=graph3+annotate("text",x=-1.5,y=6,label="问题类",size=14)
 >graph5=graph4+annotate("text",x=4,y=14,label="瘦狗类",size=14)
->graph6= graph5+xlab("相对市场份额占有率")+ylab("市场增长率")+ggtitle("案例：波士顿矩阵")+ylim(1,20)+xlim(-3,8)#相对市场份额概念啊啊啊啊幸亏发现了
+>graph6= graph5+xlab("相对市场份额占有率")+ylab("市场增长率")+ggtitle("案例：波士顿矩阵")+ylim(1,20)+xlim(-3,8)#相对市场份额概念
 >finalgraph=graph6+geom_text(aes(label=row.names(data)),colour="white")
 #Analysis
 #波士顿矩阵是为了通过分析业务的地位和相互关系策划业务的优化组合来实现企业的现金流量平衡。矩阵帮助企业把高盈利，低发展潜力的业务的资金投向具有长远发展和盈利能力，更具有吸引力的业务中去。其中横轴的相对市场份额占有率代表企业实力，纵轴市场增长率表示市场引力。
